@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>폼요소 연습하기</h1>
+
+    <h2>input 태그 연습하기</h2>
+    <form action="/posts" method="post">
+        title:<input type="text" name="title" /><br />
+        content:<input type="text" name="content" /><br />
+        <input type="submit">
+        <input type="reset">
+    </form>
+    {% for post in posts %}
+        <li>{{post.title}}</li>
+        <li>{{post.content}}</li>
+    {% endfor %}
+</body>
+
+</html>
