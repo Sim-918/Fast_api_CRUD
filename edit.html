@@ -1,0 +1,8 @@
+<h2>수정</h2>
+<form action="/update" method="post">
+    <input name="id" value="{{row.id}}" type="hidden">
+    title:<input type="text" name="title" value="{{row.title}}" /><br />
+    content:<input type="text" name="content" value="{{row.content}}" /><br />
+    <input type="submit">
+    <input type="reset">
+</form>

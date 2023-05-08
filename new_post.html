@@ -17,8 +17,11 @@
         <input type="reset">
     </form>
     {% for post in posts %}
-        <li>{{post.title}}</li>
-        <li>{{post.content}}</li>
+        <h2>ID:{{post.id}}</h2>
+        title:{{post.title}}<br>
+        content:{{post.content}}<br>
+        <a href="/edit/{{post.id}}">수정하기</a>
+        <a href="/delete/{{post.id}}">삭제하기</a>
     {% endfor %}
 </body>
 
